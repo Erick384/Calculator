@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    background-color: white;
+    display: grid;
+    height: 50vh;
+    width: 30vw;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.container > div{
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: blue;
+    border: 1px solid black;
+}
+.c{
+    grid-column: 1;
+}
+.division{
+    grid-column: 2;
+}
+.multiply{
+    grid-column: 3;
+}
+.reset{
+    grid-column: 4;
+}
+.seven{
+    grid-column: 1/2;
+}
+.egual{
+    grid-column: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.percentage{
+    grid-column: 1;
+    grid-row: 5;
+}
+.zero{
+    grid-column: 2;
+    grid-row: 5;
+}
+.fullstop{
+    grid-column: 3;
+    grid-row: 5;
+}
