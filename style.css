@@ -5,6 +5,8 @@
 }
 body{
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -14,7 +16,7 @@ body{
     background-color: white;
     display: grid;
     height: 50vh;
-    width: 30vw;
+    width: fit-content;
     /* border: 1px solid black; */
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -29,6 +31,8 @@ body{
     cursor: pointer;
     background-color: blue;
     border: 1px solid black;
+    width: 50px;
+    height: 50px;
 }
 .c{
     grid-column: 1;
@@ -43,12 +47,13 @@ body{
     grid-column: 4;
 }
 .seven{
-    grid-column: 1/2;
+    grid-column: 1;
+    grid-row: 2;
 }
 .egual{
     grid-column: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row: 4 / span 5;
+    grid-area: sidebar;
 }
 .percentage{
     grid-column: 1;
