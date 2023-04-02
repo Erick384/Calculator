@@ -1,12 +1,12 @@
-const articles = document.querySelectorAll(".container");
-const select = document.querySelector("select");
-
-function updateDisplay() {
-  articles.forEach((article) => {
-    article.style.display = select.value;
-  });
+function clearResult() {
+  document.getElementById("result").value = "";
 }
 
-select.addEventListener("change", updateDisplay);
+function appendValue(value) {
+  document.getElementById("result").value += value;
+}
 
-updateDisplay();
+function calculate() {
+  var result = eval(document.getElementById("result").value);
+  document.getElementById("result").value = result;
+}
