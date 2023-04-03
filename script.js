@@ -1,12 +1,12 @@
 function clearResult() {
-  document.getElementById("result").value = "";
+  document.getElementById("output").value = "";
 }
 
 function appendValue(value) {
-  document.getElementById("result").value += value;
+  document.getElementById("output").value += value;
 }
 
 function calculate() {
-  var result = eval(document.getElementById("result").value);
-  document.getElementById("result").value = result;
+  var result = eval(document.getElementById("output").value);
+  document.getElementById("output").value = result;
 }
