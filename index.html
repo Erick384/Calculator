@@ -10,13 +10,12 @@
   <body>
     <div class="container">
       <div class="output">
-        <input type="text" id="output" disabled />
+        <input type="text" id="output" disabled placeholder="0"/>
       </div>
       <div class="buttons">
         <button onclick="clearResult()">C</button>
         <button onclick="appendValue('/')">/</button>
         <button onclick="appendValue('*')">*</button>
-        <button onclick="appendValue('-')">-</button>
         <button onclick="appendValue('')">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,17 +39,20 @@
         <button onclick="appendValue('7')">7</button>
         <button onclick="appendValue('8')">8</button>
         <button onclick="appendValue('9')">9</button>
-        <button onclick="appendValue('+')">+</button>
+        <button onclick="appendValue('-')">-</button>
         <button onclick="appendValue('4')">4</button>
         <button onclick="appendValue('5')">5</button>
         <button onclick="appendValue('6')">6</button>
-        <button onclick="calculate()" id="equal">=</button>
+        <button onclick="appendValue('+')">+</button>
         <button onclick="appendValue('1')">1</button>
         <button onclick="appendValue('2')">2</button>
         <button onclick="appendValue('3')">3</button>
-        <button onclick="appendValue('.')">.</button>
+        <button onclick="appendValue('%')" id="percent">%</button>
         <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculate()" id="equal">=</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
