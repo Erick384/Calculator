@@ -40,22 +40,46 @@ button {
   color: #fff;
   cursor: pointer;
   font-size: 16px;
-  /* height: 50px; */
-  /* width: 50px; */
 }
 button:hover {
   background-color: #555;
 }
 button:active {
-  background-color: #333;
+  border: 1px solid #111;
+  background-color: #222;
 }
 #equal{
   grid-column: 4;
-  border: 1px solid red;
   grid-row: 4 / 5;
   grid-row-end: span 2;
 }
 #percent{
   grid-column: 1;
   grid-row: 5;
+}
+@media screen and (max-width: 600px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container{
+    padding: 2rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #output{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgb(147,163,101);
+    height: 20vh;
+  }
+  .buttons{
+    height: 60vh;
+  }
+
+  
 }
